@@ -1,7 +1,9 @@
 import React from "react";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { contacts } from "../../utils/contscts";
 import("./Footer.scss");
 
-function Footer(props) {
+function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container">
@@ -10,32 +12,41 @@ function Footer(props) {
           <p className="footer__contacts-text">г. Владивосток, ул.</p>
           <p className="footer__contacts-text">Бородинская, 46/50</p>
           <p className="footer__contacts-text">Бутик №9 (ТЦ «КОНТИНЕНТ»)</p>
-          <p className="footer__contacts-text">Телефон: 8 (423) 262-10-11</p>
-          <p className="footer__contacts-text">Почта: linzer@mylinzer.ru</p>
+          <p className="footer__contacts-text">
+            <span className="footer__contacts-text_type_bold">Телефон:</span>{" "}
+            {contacts.phonePrimary}
+          </p>
+          <p className="footer__contacts-text">
+            <span className="footer__contacts-text_type_bold">Почта: </span>{" "}
+            {contacts.emailPrimary}
+          </p>
         </div>
 
         <div className="footer__social">
           <ul className="footer__social-list">
             <li className="footer__social-item">
-              {" "}
-              <a href="#" className="twitter">
-                twitter
+              <a className="footer__social-link" href="#">
+                <FaTwitter />
               </a>
             </li>
             <li className="footer__social-item">
-              <a href="#" className="facebook">
-                facebook
+              <a className="footer__social-link" href="#">
+                <FaFacebookF />
               </a>
             </li>
             <li className="footer__social-item">
-              <a href="#" className="instagram">
-                instagram
+              <a className="footer__social-link" href="#">
+                <FaInstagram />
               </a>
             </li>
           </ul>
           <copy className="footer__copy">
-            <a href="#" className="instagram">
-              Vladimir Pestov 2022
+            <a
+              href="https://pestov-web.ru/"
+              target="_blank"
+              className="footer__copy-text"
+            >
+              © Vladimir Pestov
             </a>
           </copy>
         </div>

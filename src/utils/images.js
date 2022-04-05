@@ -17,6 +17,10 @@ import PARTNER_10 from "../images/partners/client-10.png";
 import PARTNER_11 from "../images/partners/client-11.png";
 import PARTNER_12 from "../images/partners/client-12.png";
 
+// stuff
+import VIDEO from "../images/video.jpg";
+export const VIDEO_IMG = VIDEO;
+
 // hero carousel
 export const SLIDES = [
   {

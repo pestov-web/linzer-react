@@ -5,11 +5,11 @@ import { PARTNERS } from "../../utils/images";
 
 import("./Partners.scss");
 
-function Partners(props) {
+function Partners({ sectionName }) {
   return (
     <section className="section partners">
-      <div className="section-title">
-        <h2 className="section-title-text">НАШИ ПАРТНЕРЫ</h2>s
+      <div className="section__title">
+        <h2 className="section__title-text">{sectionName}</h2>
       </div>
       <ul className="partners__list">
         {PARTNERS.map((item, index) => (

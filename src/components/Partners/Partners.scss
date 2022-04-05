@@ -1,8 +1,7 @@
 .partners {
-  max-width: 510px;
-  margin: 0 auto;
   &__list {
-    margin: 0;
+    max-width: 510px;
+    margin: 0 auto;
     padding: 0;
     list-style: none;
     display: flex;
@@ -38,8 +37,9 @@
 
 @media screen and (min-width: 576px) {
   .partners {
-    max-width: 510px;
-    margin: 0 auto;
+    &__list {
+      max-width: 510px;
+    }
     &__item {
       width: calc(100% / 12 * 6 - 41px);
     }
@@ -48,8 +48,9 @@
 
 @media screen and (min-width: 768px) {
   .partners {
-    max-width: 690px;
-    margin: 0 auto;
+    &__list {
+      max-width: 690px;
+    }
     &__item {
       width: calc(100% / 12 * 4 - 41px);
     }
@@ -58,8 +59,9 @@
 
 @media screen and (min-width: 992px) {
   .partners {
-    max-width: 930px;
-    margin: 0 auto;
+    &__list {
+      max-width: 930px;
+    }
     &__item {
       width: calc(100% / 12 * 3 - 41px);
     }
@@ -68,8 +70,9 @@
 
 @media screen and (min-width: 1200px) {
   .partners {
-    max-width: 1110px;
-    margin: 0 auto;
+    &__list {
+      max-width: 1110px;
+    }
     &__item {
       width: calc(100% / 12 * 3 - 41px);
     }

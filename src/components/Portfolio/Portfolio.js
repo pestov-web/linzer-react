@@ -1,8 +1,9 @@
 import React from "react";
+import "./Portfolio.scss";
 
-function About({ sectionName }) {
+function Portfolio({ sectionName }) {
   return (
-    <section className="section about">
+    <section className="section section_theme_dark portfolio">
       <div className="section__title">
         <h2 className="section__title-text">{sectionName}</h2>
       </div>
@@ -10,4 +11,4 @@ function About({ sectionName }) {
   );
 }
 
-export default About;
+export default Portfolio;
