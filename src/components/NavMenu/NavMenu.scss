@@ -1,0 +1,25 @@
+.nav {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #111;
+    transition: 0.3s;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    &:hover {
+      color: #1bbd36;
+    }
+  }
+  &__link-active {
+    color: #1bbd36;
+  }
+}
