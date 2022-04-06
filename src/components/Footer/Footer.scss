@@ -41,6 +41,7 @@
       display: flex;
       padding: 0;
       gap: 10px;
+      margin: 0;
     }
     &-item {
     }
@@ -66,7 +67,7 @@
   }
   &__copy {
     &-text {
-      font-weight: 400;
+      font-weight: 600;
       font-size: 14px;
       line-height: 17px;
       text-decoration: none;

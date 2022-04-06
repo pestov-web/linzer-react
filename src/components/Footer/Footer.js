@@ -40,7 +40,7 @@ function Footer() {
               </a>
             </li>
           </ul>
-          <copy className="footer__copy">
+          <small className="footer__copy">
             <a
               href="https://pestov-web.ru/"
               target="_blank"
@@ -48,7 +48,7 @@ function Footer() {
             >
               © Vladimir Pestov
             </a>
-          </copy>
+          </small>
         </div>
       </div>
     </footer>

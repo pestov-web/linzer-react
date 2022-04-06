@@ -11,7 +11,7 @@ function Portfolio({ sectionName }) {
       </div>
       <ul className="portfolio__list">
         {portfolio.map((item, index) => (
-          <li className="portfolio__list-item">
+          <li key={index} className="portfolio__list-item">
             <ImageViewer>
               <img
                 className="portfolio__list-img"
