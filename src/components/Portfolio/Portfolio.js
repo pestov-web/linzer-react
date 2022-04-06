@@ -5,7 +5,7 @@ import { portfolio } from "../../utils/portfolio";
 
 function Portfolio({ sectionName }) {
   return (
-    <section className="section section_theme_dark portfolio">
+    <section id="portfolio" className="section section_theme_dark portfolio">
       <div className="section__title">
         <h2 className="section__title-text">{sectionName}</h2>
       </div>

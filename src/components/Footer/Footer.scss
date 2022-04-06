@@ -2,7 +2,7 @@
   color: #fff;
   font-size: 14px;
   background: #111;
-  padding: 60px 0 30px 0;
+  padding: 60px 15px 30px 15px;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -77,6 +77,7 @@
 }
 @media screen and (min-width: 576px) {
   .footer {
+    padding: 60px 0 30px 0;
     &__container {
       max-width: 510px;
     }

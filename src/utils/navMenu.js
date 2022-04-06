@@ -1,10 +1,35 @@
 export const menuItems = [
-  { nameEn: "Home", nameRu: "Главная", link: "/" },
-  { nameEn: "About Us", nameRu: "О компании", link: "/about" },
-  { nameEn: "Products", nameRu: "Продукция", link: "/production" },
-  { nameEn: "Portfolio", nameRu: "Портфолио", link: "/portfolio" },
-  { nameEn: "Partners", nameRu: "Партнеры", link: "/partners" },
-  { nameEn: "Contacts", nameRu: "Контакты", link: "/contacts" },
+  { nameEn: "Home", nameRu: "Главная", link: "/", anchor: "#home" },
+  {
+    nameEn: "About Us",
+    nameRu: "О компании",
+    link: "/about",
+    anchor: "#about",
+  },
+  {
+    nameEn: "Products",
+    nameRu: "Продукция",
+    link: "/products",
+    anchor: "#products",
+  },
+  {
+    nameEn: "Portfolio",
+    nameRu: "Портфолио",
+    link: "/portfolio",
+    anchor: "#portfolio",
+  },
+  {
+    nameEn: "Partners",
+    nameRu: "Партнеры",
+    link: "/partners",
+    anchor: "#partners",
+  },
+  {
+    nameEn: "Contacts",
+    nameRu: "Контакты",
+    link: "/contacts",
+    anchor: "#contacts",
+  },
 ];
 
 export const dropDownMenuItems = [

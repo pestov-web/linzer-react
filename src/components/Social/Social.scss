@@ -1,5 +1,29 @@
 .social {
+  padding: 0 0 0 40px;
   display: flex;
   flex-direction: row;
   gap: 8px;
+  list-style: none;
+  position: relative;
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 0;
+    transition: all ease-in-out 0.4s;
+    &:hover {
+      color: #1bbd36;
+    }
+  }
+
+  &::before {
+    content: "";
+    border-left: 1px solid #c4c4c4;
+    position: absolute;
+    height: 20px;
+    left: 20px;
+  }
 }

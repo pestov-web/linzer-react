@@ -8,7 +8,7 @@ function About({ sectionName }) {
   const [isOpen, setOpen] = React.useState(false);
 
   return (
-    <section className="section about">
+    <section id="about" className="section about">
       <div className="section__title">
         <h2 className="section__title-text">{sectionName}</h2>
       </div>

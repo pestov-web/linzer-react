@@ -6,7 +6,7 @@
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding: 15px 15px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 
   &__container {
@@ -20,5 +20,37 @@
   &__navigation {
     display: flex;
     flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .header {
+    &__container {
+      max-width: 510px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    &__container {
+      max-width: 690px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    &__container {
+      max-width: 930px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &__container {
+      max-width: 1110px;
+    }
   }
 }

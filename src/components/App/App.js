@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./App.scss";
 
 import Header from "../Header/Header";
@@ -8,8 +10,8 @@ import About from "../About/About";
 import Why from "../Why/Why";
 import Products from "../Products/Products";
 import Portfolio from "../Portfolio/Portfolio";
-import ModalVideo from "react-modal-video";
-import React from "react";
+
+import Contacts from "../Contacts/Contacts";
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
       <Products sectionName={"Продукция"} />
       <Portfolio sectionName={"Портфолио"} />
       <Partners sectionName={"Наши партнеры"} />
+      <Contacts />
       <Footer />{" "}
     </div>
   );

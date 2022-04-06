@@ -24,6 +24,7 @@ function Slider(props) {
       navigation={true}
       modules={[Pagination, Navigation]}
       className="mySwiper"
+      id="home"
     >
       {SLIDES.map((item, index) => (
         <SwiperSlide key={index}>

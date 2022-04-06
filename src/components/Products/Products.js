@@ -5,7 +5,7 @@ import { products } from "../../utils/products";
 
 function Products({ sectionName }) {
   return (
-    <section className="section products">
+    <section id="products" className="section products">
       <div className="section__title">
         <h2 className="section__title-text">{sectionName}</h2>
       </div>
