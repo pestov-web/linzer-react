@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-import { contacts } from "../../utils/contscts";
+import { contacts } from "../../utils/contacts";
 import("./Footer.scss");
 
 function Footer() {

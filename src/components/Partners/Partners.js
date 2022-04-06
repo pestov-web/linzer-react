@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
 import { PARTNERS } from "../../utils/images";
 
 import("./Partners.scss");
@@ -14,13 +12,13 @@ function Partners({ sectionName }) {
       <ul className="partners__list">
         {PARTNERS.map((item, index) => (
           <li key={index} className="partners__item">
-            <Link to={item.link}>
+            <a href={item.link} target="_blank">
               <img
                 className="partners__item-image"
                 src={item.image}
                 alt={item.nameRu}
               />
-            </Link>
+            </a>
           </li>
         ))}
       </ul>
