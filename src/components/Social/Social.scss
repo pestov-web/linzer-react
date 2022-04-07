@@ -1,5 +1,5 @@
 .social {
-  padding: 0 0 0 40px;
+  padding: 0 40px 0 40px;
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -18,12 +18,17 @@
       color: #1bbd36;
     }
   }
+}
 
-  &::before {
-    content: "";
-    border-left: 1px solid #c4c4c4;
-    position: absolute;
-    height: 20px;
-    left: 20px;
+@media screen and (min-width: 992px) {
+  .social {
+    padding: 0 0 0 40px;
+    &::before {
+      content: "";
+      border-left: 1px solid #c4c4c4;
+      position: absolute;
+      height: 20px;
+      left: 20px;
+    }
   }
 }

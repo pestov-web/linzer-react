@@ -27,7 +27,7 @@ function Contacts() {
               <div className="contacts__list-ico">
                 <FaEnvelope />
               </div>
-              <h3 className="contacts__list-title">Адрес шоу-рума:</h3>
+              <h3 className="contacts__list-title">Почта:</h3>
             </div>
             <p className="contacts__list-item-contacts">linzer@mylinzer.ru</p>
             <p className="contacts__list-item-contacts">office@mylinzer.ru</p>
@@ -37,7 +37,7 @@ function Contacts() {
               <div className="contacts__list-ico">
                 <FaPhone />
               </div>
-              <h3 className="contacts__list-title">Адрес шоу-рума:</h3>
+              <h3 className="contacts__list-title">Телефон:</h3>
             </div>
 
             <p className="contacts__list-item-contacts">8 (423) 262-10-11</p>

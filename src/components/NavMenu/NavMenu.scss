@@ -1,6 +1,6 @@
 .nav {
   &__list {
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 28px;
   }
@@ -21,5 +21,13 @@
   }
   &__link-active {
     color: #1bbd36;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav {
+    &__list {
+      display: flex;
+    }
   }
 }

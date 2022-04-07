@@ -6,20 +6,20 @@
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 15px;
+  padding: 15px 0;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 
   &__container {
     display: flex;
-    width: 100%;
-    max-width: 1110px;
-    height: 40px;
+    width: 90%;
+    height: 28px;
     align-items: center;
     justify-content: space-between;
   }
   &__navigation {
     display: flex;
     flex-direction: row;
+    position: relative;
   }
 }
 
@@ -43,6 +43,7 @@
   .header {
     &__container {
       max-width: 930px;
+      height: 40px;
     }
   }
 }

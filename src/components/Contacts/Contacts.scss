@@ -1,11 +1,13 @@
 .contacts {
   padding: 60px 0;
   &__container {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     padding: 0 15px 0;
+    max-width: 90%;
   }
   &__list {
     display: flex;
@@ -18,7 +20,7 @@
     &-item {
       display: flex;
       flex-direction: column;
-      width: calc(100% / 12 * 12);
+      width: calc(100% / 12 * 12 - 10px);
       &-contacts {
         margin: 0 0 5px 57px;
       }

@@ -1,12 +1,9 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
-import ModalVideo from "react-modal-video";
 import "./About.scss";
 import { VIDEO_IMG } from "../../utils/images";
 
 function About({ sectionName }) {
-  const [isOpen, setOpen] = React.useState(false);
-
   return (
     <section id="about" className="section about">
       <div className="section__title">
@@ -15,10 +12,14 @@ function About({ sectionName }) {
       <div className="about__container">
         <div className="about__video">
           <img src={VIDEO_IMG} className="about__video-img" alt="Промо ролик" />
-          <button
-            className="about__video-button"
-            onClick={() => setOpen(true)}
-          ></button>
+
+          <a
+            href="https://www.youtube.com/watch?v=2c9wJSuCwow"
+            className="about__video-button venobox"
+            data-vbtype="video"
+            data-autoplay="true"
+            data-maxwidth="900px"
+          />
         </div>
         <ul className="about__list">
           <h3 className="about__list-title">Сделайте правильный выбор</h3>
@@ -46,13 +47,6 @@ function About({ sectionName }) {
           </li>
         </ul>
       </div>{" "}
-      <ModalVideo
-        autoplay={1}
-        channel="youtube"
-        isOpen={isOpen}
-        videoId="2c9wJSuCwow"
-        onClose={() => setOpen(false)}
-      />
     </section>
   );
 }

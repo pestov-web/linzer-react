@@ -1,3 +1,15 @@
+export const dropDownMenuItems = [
+  { nameRu: "Окна", link: "/windows" },
+  { nameRu: "Двери", link: "/doors" },
+  { nameRu: "Зимние сады", link: "/winterg" },
+  { nameRu: "Фасадное остекление", link: "/facade" },
+  { nameRu: "Козырьки и навесы", link: "/canopies" },
+  { nameRu: "Раздвижные системы", link: "/sliding" },
+  { nameRu: "Зенитные фонари", link: "/lantern" },
+  { nameRu: "ПВХ конструкции", link: "/pvc" },
+  { nameRu: "Вентилируемые фасады", link: "/ventilated" },
+];
+
 export const menuItems = [
   { nameEn: "Home", nameRu: "Главная", link: "/", anchor: "#home" },
   {
@@ -11,6 +23,7 @@ export const menuItems = [
     nameRu: "Продукция",
     link: "/products",
     anchor: "#products",
+    dropDown: dropDownMenuItems,
   },
   {
     nameEn: "Portfolio",
@@ -30,16 +43,4 @@ export const menuItems = [
     link: "/contacts",
     anchor: "#contacts",
   },
-];
-
-export const dropDownMenuItems = [
-  { nameRu: "Окна", link: "/windows" },
-  { nameRu: "Двери", link: "/doors" },
-  { nameRu: "Зимние сады", link: "/winterg" },
-  { nameRu: "Фасадное остекление", link: "/facade" },
-  { nameRu: "Козырьки и навесы", link: "/canopies" },
-  { nameRu: "Раздвижные системы", link: "/sliding" },
-  { nameRu: "Зенитные фонари", link: "/lantern" },
-  { nameRu: "ПВХ конструкции", link: "/pvc" },
-  { nameRu: "Вентилируемые фасады", link: "/ventilated" },
 ];

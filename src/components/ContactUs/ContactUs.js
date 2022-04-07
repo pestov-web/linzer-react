@@ -47,7 +47,11 @@ export const ContactUs = () => {
           name="message"
           placeholder="Пожалуйста напишите нам хоть что-то =)"
         />
-        <input className="contact__form-submit" type="submit" value="Send" />
+        <input
+          className="contact__form-submit"
+          type="submit"
+          value="Отправить Сообщение"
+        />
       </form>
     </div>
   );

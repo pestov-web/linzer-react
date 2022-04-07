@@ -1,7 +1,8 @@
 .portfolio {
+  width: 100%;
   &__list {
     max-width: 510px;
-    padding: 0;
+    padding: 0 10px;
     margin: 0 auto;
     list-style: none;
     display: flex;
@@ -11,7 +12,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: calc(100% / 12 * 6 - 20px);
+      width: calc(100% / 12 * 12);
       overflow: hidden;
     }
     &-img {
@@ -26,7 +27,7 @@
     &__list {
       max-width: 510px;
       &-item {
-        width: calc(100% / 12 * 6 - 20px);
+        width: calc(100% / 12 * 6 - 15px);
       }
       &-img {
       }
