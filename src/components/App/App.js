@@ -13,6 +13,8 @@ import Portfolio from "../Portfolio/Portfolio";
 import Contacts from "../Contacts/Contacts";
 
 import { menuItems } from "../../utils/navMenu";
+import { Route, Routes } from "react-router-dom";
+import Windows from "../Windows/Windows";
 
 function App() {
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -22,8 +24,8 @@ function App() {
   const openModal = () => {
     setIsOpen(true);
   };
-  const openDropDown = () => {
-    setDropDownIsOpen(true);
+  const toggleDropDown = () => {
+    setDropDownIsOpen(!dropDownIsOpen);
   };
   const toggleAccordion = () => {
     setAccordionIsOpen(!accordionIsOpen);
@@ -31,9 +33,6 @@ function App() {
 
   const closeModal = () => {
     setIsOpen(false);
-  };
-  const closeDropDown = () => {
-    setDropDownIsOpen(false);
   };
 
   //  Venobox2 (youtube modal)
@@ -51,19 +50,28 @@ function App() {
         dropDownIsOpen={dropDownIsOpen}
         accordionIsOpen={accordionIsOpen}
         openModal={openModal}
-        openDropDown={openDropDown}
+        toggleDropDown={toggleDropDown}
         toggleAccordion={toggleAccordion}
         closeModal={closeModal}
-        closeDropDown={closeDropDown}
       />
-      <Slider />
-      <About sectionName={"О компании"} />
-      <Why sectionName={"Почему мы"} />
-      <Products sectionName={"Продукция"} />
-      <Portfolio sectionName={"Портфолио"} />
-      <Partners sectionName={"Наши партнеры"} />
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={[
+            <Slider key={0} />,
+            <About sectionName={"О компании"} key={1} />,
+            <Why sectionName={"Почему мы"} key={2} />,
+            <Products sectionName={"Продукция"} key={3} />,
+            <Portfolio sectionName={"Портфолио"} key={4} />,
+            <Partners sectionName={"Наши партнеры"} key={5} />,
+          ]}
+        />
+        <Route exact path="/windows" element={<Windows />} />
+      </Routes>
+
       <Contacts />
-      <Footer />{" "}
+      <Footer />
     </div>
   );
 }

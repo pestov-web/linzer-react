@@ -1,0 +1,27 @@
+.dropdown {
+  list-style: none;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  background-color: white;
+  border-top: solid 1px #1bbd36;
+  width: 190px;
+  top: 30px;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  &__item {
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #4d4643;
+    width: 100%;
+    &:hover {
+      color: #1bbd36;
+    }
+  }
+  &_active {
+    display: flex;
+  }
+}

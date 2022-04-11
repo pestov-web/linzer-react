@@ -3,55 +3,34 @@
   position: fixed;
   display: flex;
   justify-content: center;
-  background: #fff;
+  background: white;
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-
   &__container {
     display: flex;
     width: 90%;
     height: 28px;
     align-items: center;
     justify-content: space-between;
+    @include sm {
+      max-width: 510px;
+    }
+    @include md {
+      max-width: 690px;
+    }
+    @include lg {
+      max-width: 930px;
+      height: 40px;
+    }
+    @include xl {
+      max-width: 1110px;
+    }
   }
   &__navigation {
     display: flex;
     flex-direction: row;
     position: relative;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .header {
-    &__container {
-      max-width: 510px;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header {
-    &__container {
-      max-width: 690px;
-    }
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .header {
-    &__container {
-      max-width: 930px;
-      height: 40px;
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    &__container {
-      max-width: 1110px;
-    }
   }
 }

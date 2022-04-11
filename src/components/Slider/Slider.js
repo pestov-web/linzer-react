@@ -10,7 +10,7 @@ import { Pagination, Navigation } from "swiper";
 
 import { SLIDES } from "../../utils/images";
 
-import("./Slider.scss");
+import("../../scss/vendors/swiper/Slider.scss");
 
 function Slider(props) {
   return (

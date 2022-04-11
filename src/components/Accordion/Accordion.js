@@ -1,7 +1,7 @@
 import React from "react";
 import "./Accordion.scss";
 
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Accordion({ dropDownItems, accordionIsOpen }) {
   return (
@@ -10,9 +10,9 @@ function Accordion({ dropDownItems, accordionIsOpen }) {
     >
       {dropDownItems.map((item, index) => (
         <li key={index} className="accordion__item">
-          <NavLink className="accordion__link" to={item.link}>
+          <Link className="accordion__link" to={item.link}>
             {item.nameRu}
-          </NavLink>
+          </Link>
         </li>
       ))}
     </ul>

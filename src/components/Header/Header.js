@@ -1,5 +1,4 @@
 import React from "react";
-import "./Header.scss";
 import Logo from "../Logo/Logo";
 import NavMenu from "../NavMenu/NavMenu";
 import Social from "../Social/Social";
@@ -9,8 +8,10 @@ import Modal from "../Modal/Modal";
 function Header({
   menuItems,
   modalIsOpen,
+  dropDownIsOpen,
   accordionIsOpen,
   openModal,
+  toggleDropDown,
   toggleAccordion,
   closeModal,
 }) {
@@ -19,7 +20,11 @@ function Header({
       <div className="header__container">
         <Logo />
         <div className="header__navigation">
-          <NavMenu menuItems={menuItems} />
+          <NavMenu
+            menuItems={menuItems}
+            dropDownIsOpen={dropDownIsOpen}
+            toggleDropDown={toggleDropDown}
+          />
           <Social />
         </div>
       </div>

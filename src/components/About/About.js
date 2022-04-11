@@ -1,6 +1,5 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
-import "./About.scss";
 import { VIDEO_IMG } from "../../utils/images";
 
 function About({ sectionName }) {

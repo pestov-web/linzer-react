@@ -3,7 +3,7 @@ import Modal from "react-modal";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import React from "react";
 import Accordion from "../Accordion/Accordion";
-import { HiChevronDown } from "react-icons/hi";
+import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 
 Modal.setAppElement("body");
 
@@ -44,7 +44,12 @@ function ModalMenu({
                     onClick={toggleAccordion}
                   >
                     {item.nameRu}
-                    <HiChevronDown className="modal-menu__nav-link-ico" />
+                    {!accordionIsOpen ? (
+                      <HiChevronDown className="modal-menu__nav-link-ico" />
+                    ) : (
+                      <HiChevronUp className="modal-menu__nav-link-ico" />
+                    )}
+
                     <Accordion
                       dropDownItems={item.dropDown}
                       accordionIsOpen={accordionIsOpen}
