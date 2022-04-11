@@ -16,14 +16,26 @@ import { menuItems } from "../../utils/navMenu";
 
 function App() {
   const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [dropDownIsOpen, setDropDownIsOpen] = React.useState(false);
+  const [accordionIsOpen, setAccordionIsOpen] = React.useState(false);
 
-  function openModal() {
+  const openModal = () => {
     setIsOpen(true);
-  }
+  };
+  const openDropDown = () => {
+    setDropDownIsOpen(true);
+  };
+  const toggleAccordion = () => {
+    setAccordionIsOpen(!accordionIsOpen);
+  };
 
-  function closeModal() {
+  const closeModal = () => {
     setIsOpen(false);
-  }
+  };
+  const closeDropDown = () => {
+    setDropDownIsOpen(false);
+  };
+
   //  Venobox2 (youtube modal)
   React.useEffect(() => {
     new VenoBox({
@@ -36,8 +48,13 @@ function App() {
       <Header
         menuItems={menuItems}
         modalIsOpen={modalIsOpen}
+        dropDownIsOpen={dropDownIsOpen}
+        accordionIsOpen={accordionIsOpen}
         openModal={openModal}
+        openDropDown={openDropDown}
+        toggleAccordion={toggleAccordion}
         closeModal={closeModal}
+        closeDropDown={closeDropDown}
       />
       <Slider />
       <About sectionName={"О компании"} />

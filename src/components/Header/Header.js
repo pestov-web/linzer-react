@@ -6,7 +6,14 @@ import Social from "../Social/Social";
 import BurgerButton from "../BurgerButton/BurgerButton";
 import Modal from "../Modal/Modal";
 
-function Header({ menuItems, modalIsOpen, openModal, closeModal }) {
+function Header({
+  menuItems,
+  modalIsOpen,
+  accordionIsOpen,
+  openModal,
+  toggleAccordion,
+  closeModal,
+}) {
   return (
     <header className="header">
       <div className="header__container">
@@ -16,8 +23,18 @@ function Header({ menuItems, modalIsOpen, openModal, closeModal }) {
           <Social />
         </div>
       </div>
-      <BurgerButton openModal={openModal} />
-      <Modal modalIsOpen={modalIsOpen} closeModal={closeModal} />
+      <BurgerButton
+        modalIsOpen={modalIsOpen}
+        openModal={openModal}
+        closeModal={closeModal}
+      />
+      <Modal
+        modalIsOpen={modalIsOpen}
+        accordionIsOpen={accordionIsOpen}
+        toggleAccordion={toggleAccordion}
+        closeModal={closeModal}
+        menuItems={menuItems}
+      />
     </header>
   );
 }

@@ -9,7 +9,7 @@ function NavMenu({ menuItems }) {
     <nav className="nav">
       <ul className="nav__list">
         {menuItems.map((item, index) =>
-          !item.dropDown ? (
+          item.dropDown ? (
             <li key={index} className="nav__item">
               <AnchorLink className="nav__link" href={item.anchor}>
                 {item.nameRu}

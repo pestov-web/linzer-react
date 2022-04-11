@@ -1,11 +1,20 @@
 import React from "react";
-import { MdDehaze } from "react-icons/md";
+
+import { HiOutlineX, HiOutlineMenu } from "react-icons/hi";
 import "./BurgerButton.scss";
-function BurgerButton({ openModal }) {
+function BurgerButton({ modalIsOpen, openModal, closeModal }) {
   return (
-    <button className="burger" onClick={openModal}>
-      <MdDehaze className="burger__ico" />
-    </button>
+    <>
+      {!modalIsOpen ? (
+        <button className="burger" onClick={openModal}>
+          <HiOutlineMenu className="burger__ico" />
+        </button>
+      ) : (
+        <button className="burger" onClick={closeModal}>
+          <HiOutlineX className="burger__ico" />
+        </button>
+      )}
+    </>
   );
 }
 

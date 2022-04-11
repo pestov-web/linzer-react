@@ -2,19 +2,22 @@
   padding: 0;
   background: white;
   border: none;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   position: absolute;
   right: 25px;
-  top: 14px;
+  top: 17px;
+  color: #111111;
+  transition: all ease-in 0.4s;
+  &:hover {
+    color: #1bbd36;
+  }
   &__ico {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 992px) {
   .burger {
     display: none;
-    &__ico {
-    }
   }
 }

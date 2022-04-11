@@ -1,23 +1,60 @@
 import "./Modal.scss";
 import Modal from "react-modal";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import React from "react";
+import Accordion from "../Accordion/Accordion";
+import { HiChevronDown } from "react-icons/hi";
 
 Modal.setAppElement("body");
 
-function ModalMenu({ modalIsOpen, closeModal }) {
+function ModalMenu({
+  modalIsOpen,
+  accordionIsOpen,
+  toggleAccordion,
+  closeModal,
+  menuItems,
+}) {
   return (
     <div>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        contentLabel="Example Modal"
+        contentLabel="Burger Modal"
         overlayClassName="modal-menu__overlay"
         className="modal-menu"
       >
-        <button
-          className="modal-menu__close-button button"
-          onClick={closeModal}
-        ></button>
-        <nav></nav>
+        <nav>
+          <ul className="modal-menu__nav">
+            {menuItems.map((item, index) =>
+              !item.dropDown ? (
+                <li key={index} className="modal-menu__nav-item">
+                  <AnchorLink
+                    className="modal-menu__nav-link"
+                    href={item.anchor}
+                    onClick={closeModal}
+                  >
+                    {item.nameRu}
+                  </AnchorLink>
+                </li>
+              ) : (
+                <li key={index} className="modal-menu__nav-item">
+                  <AnchorLink
+                    className="modal-menu__nav-link"
+                    href={item.anchor}
+                    onClick={toggleAccordion}
+                  >
+                    {item.nameRu}
+                    <HiChevronDown className="modal-menu__nav-link-ico" />
+                    <Accordion
+                      dropDownItems={item.dropDown}
+                      accordionIsOpen={accordionIsOpen}
+                    />
+                  </AnchorLink>
+                </li>
+              )
+            )}
+          </ul>
+        </nav>
       </Modal>
     </div>
   );
