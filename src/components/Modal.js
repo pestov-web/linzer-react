@@ -32,11 +32,19 @@ function ModalMenu({
               !item.dropDown ? (
                 <li key={index} className="modal-menu__nav-item">
                   {currenPath === "/" ? (
-                    <ScrollToButton toId={item.anchor}>
+                    <ScrollToButton
+                      toId={item.anchor}
+                      onClick={closeModal}
+                      styleClass={"nav__link"}
+                    >
                       {item.nameRu}
                     </ScrollToButton>
                   ) : (
-                    <HashLink className="nav__link" to={`/#${item.anchor}`}>
+                    <HashLink
+                      className="nav__link"
+                      to={`/#${item.anchor}`}
+                      onClick={closeModal}
+                    >
                       {item.nameRu}
                     </HashLink>
                   )}
@@ -47,6 +55,7 @@ function ModalMenu({
                     <>
                       {" "}
                       <ScrollToButton
+                        styleClass={"nav__link"}
                         toId={item.anchor}
                         onClick={toggleAccordion}
                       >
@@ -60,6 +69,7 @@ function ModalMenu({
                       <Accordion
                         dropDownItems={item.dropDown}
                         accordionIsOpen={accordionIsOpen}
+                        closeModal={closeModal}
                       />
                     </>
                   ) : (
@@ -80,6 +90,7 @@ function ModalMenu({
                       <Accordion
                         dropDownItems={item.dropDown}
                         accordionIsOpen={accordionIsOpen}
+                        closeModal={closeModal}
                       />
                     </>
                   )}

@@ -1,7 +1,14 @@
 import React from "react";
 import { scrollTo } from "../utils/scrollTo";
 
-const ScrollToButton = ({ toId, toRef, duration, children, onClick }) => {
+const ScrollToButton = ({
+  toId,
+  toRef,
+  duration,
+  children,
+  onClick,
+  styleClass,
+}) => {
   const handleClick = () => {
     scrollTo({ id: toId, ref: toRef, duration });
     if (onClick) {
@@ -10,7 +17,12 @@ const ScrollToButton = ({ toId, toRef, duration, children, onClick }) => {
   };
 
   return (
-    <button className="scroll-to__button" onClick={handleClick}>
+    <button
+      className={
+        styleClass ? `scroll-to__button ${styleClass}` : "scroll-to__button"
+      }
+      onClick={handleClick}
+    >
       {children}
     </button>
   );
