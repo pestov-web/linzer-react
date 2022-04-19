@@ -87,6 +87,10 @@
       line-height: 17px;
       text-decoration: none;
       color: $copy-text;
+      transition: color ease-in 0.3s;
+      &:hover {
+        color: rgba($color-primary, 0.6);
+      }
     }
   }
 }

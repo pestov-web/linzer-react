@@ -1,7 +1,7 @@
 .accordion {
   display: none;
   flex-direction: column;
-  gap: 3px;
+  gap: 7px;
   list-style: none;
   padding: 10px 0 0 0;
   margin: 0;
@@ -10,16 +10,25 @@
   }
   &__item {
     font-family: "Roboto", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
+    position: relative;
   }
   &__link {
-    display: block;
     text-decoration: none;
-
+    display: block;
     color: rgba(77, 70, 67, 0.7);
-    border-bottom: solid rgba(0, 0, 0, 0.1) 1px;
+
     &:hover {
       color: #1bbd36;
+      background-color: rgba($color-primary, 0.1);
+    }
+    &::before {
+      content: "";
+      display: block;
+      border-bottom: solid rgba($color-primary, 0.3) 1px;
+      position: absolute;
+      width: 100%;
+      bottom: -4px;
     }
   }
 }

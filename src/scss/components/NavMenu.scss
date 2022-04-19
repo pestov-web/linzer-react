@@ -34,7 +34,8 @@
       box-sizing: border-box;
       color: $color-primary;
       position: absolute;
-      font-size: 18px;
+      font-size: 19px;
+      top: 0;
     }
     &:hover {
       color: $color-primary;
@@ -55,8 +56,8 @@
   width: $submenu-width;
   background-color: $color-white;
   list-style: none;
-  padding: 10px 0 5px;
-  box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
+  padding: 10px 0 10px;
+  box-shadow: 3px 3px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   top: 30px;
   border-top: solid $color-primary 2px;

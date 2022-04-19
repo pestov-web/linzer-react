@@ -32,7 +32,13 @@
       }
     }
     &-text {
+      box-sizing: border-box;
       height: 132px;
+      max-height: 300px;
+      min-height: 44px;
+      min-width: 100%;
+      width: 100%;
+      max-width: 890px;
       padding: 10px 12px;
       border-radius: 4px;
       background-clip: padding-box;
