@@ -1,12 +1,12 @@
 import React from "react";
 
-import { HiChevronDown, HiChevronUp } from "react-icons/hi";
+import { HiChevronDown } from "react-icons/hi";
 import ScrollToButton from "./ScrollToButton";
 
 import { HashLink } from "react-router-hash-link";
 import DropDownMenu from "./DropDownMenu";
 
-function NavMenu({ menuItems, toggleDropDown, dropDownIsOpen, currenPath }) {
+function NavMenu({ menuItems, currenPath }) {
   return (
     <nav className="nav">
       <ul className="nav__list">

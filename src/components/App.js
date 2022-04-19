@@ -30,7 +30,6 @@ import ScrollTopButton from "./ScrollTopButton";
 
 function App() {
   const [modalIsOpen, setIsOpen] = React.useState(false);
-  const [dropDownIsOpen, setDropDownIsOpen] = React.useState(false);
   const [accordionIsOpen, setAccordionIsOpen] = React.useState(false);
 
   const location = useLocation();
@@ -38,9 +37,7 @@ function App() {
   const openModal = () => {
     setIsOpen(true);
   };
-  const toggleDropDown = () => {
-    setDropDownIsOpen(!dropDownIsOpen);
-  };
+
   const toggleAccordion = () => {
     setAccordionIsOpen(!accordionIsOpen);
   };
@@ -69,10 +66,8 @@ function App() {
       <Header
         menuItems={menuItems}
         modalIsOpen={modalIsOpen}
-        dropDownIsOpen={dropDownIsOpen}
         accordionIsOpen={accordionIsOpen}
         openModal={openModal}
-        toggleDropDown={toggleDropDown}
         toggleAccordion={toggleAccordion}
         closeModal={closeModal}
         currenPath={location.pathname}

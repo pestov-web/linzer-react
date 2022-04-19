@@ -26,7 +26,9 @@ function Footer() {
             <li className="footer__social-item">
               <a
                 className="footer__social-link"
+                target="_blank"
                 href="https://twitter.com/?lang=ru"
+                rel="noreferrer"
               >
                 <FaTwitter />
               </a>
@@ -34,7 +36,9 @@ function Footer() {
             <li className="footer__social-item">
               <a
                 className="footer__social-link"
+                target="_blank"
                 href="https://ru-ru.facebook.com/"
+                rel="noreferrer"
               >
                 <FaFacebookF />
               </a>
@@ -42,7 +46,9 @@ function Footer() {
             <li className="footer__social-item">
               <a
                 className="footer__social-link"
+                target="_blank"
                 href="https://www.instagram.com/"
+                rel="noreferrer"
               >
                 <FaInstagram />
               </a>
@@ -53,6 +59,7 @@ function Footer() {
               href="https://pestov-web.ru/"
               target="_blank"
               className="footer__copy-text"
+              rel="noreferrer"
             >
               © Vladimir Pestov
             </a>

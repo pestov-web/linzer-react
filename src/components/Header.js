@@ -8,10 +8,8 @@ import Modal from "./Modal";
 function Header({
   menuItems,
   modalIsOpen,
-  dropDownIsOpen,
   accordionIsOpen,
   openModal,
-  toggleDropDown,
   toggleAccordion,
   closeModal,
   currenPath,
@@ -21,12 +19,7 @@ function Header({
       <div className="header__container">
         <Logo />
         <div className="header__navigation">
-          <NavMenu
-            menuItems={menuItems}
-            dropDownIsOpen={dropDownIsOpen}
-            toggleDropDown={toggleDropDown}
-            currenPath={currenPath}
-          />
+          <NavMenu menuItems={menuItems} currenPath={currenPath} />
           <Social />
         </div>
       </div>
