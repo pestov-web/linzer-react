@@ -1,5 +1,4 @@
 import React from "react";
-import "./Accordion.scss";
 
 import { Link } from "react-router-dom";
 

@@ -3,7 +3,7 @@
     display: none;
     flex-direction: row;
     gap: 28px;
-    height: 100%;
+    height: 55%;
     @include lg {
       display: flex;
     }
@@ -11,10 +11,14 @@
   &__item {
     list-style: none;
     position: relative;
+
     &:hover {
       .nav__submenu {
         display: flex;
       }
+    }
+    &-sub {
+      padding-right: 10px;
     }
   }
   &__link {
@@ -25,6 +29,13 @@
     font-size: 13px;
     font-weight: 600;
     font-family: $font-family;
+
+    &-ico {
+      box-sizing: border-box;
+      color: $color-primary;
+      position: absolute;
+      font-size: 18px;
+    }
     &:hover {
       color: $color-primary;
     }

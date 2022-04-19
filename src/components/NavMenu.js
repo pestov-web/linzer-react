@@ -24,7 +24,7 @@ function NavMenu({ menuItems, toggleDropDown, dropDownIsOpen, currenPath }) {
               )}
             </li>
           ) : (
-            <li key={index} className="nav__item">
+            <li key={index} className="nav__item nav__item-sub">
               {currenPath === "/" ? (
                 <>
                   <ScrollToButton toId={item.anchor}>
