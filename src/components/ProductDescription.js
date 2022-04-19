@@ -16,7 +16,14 @@ function ProductDescription({ product }) {
           }
         >
           <div className="section__title">
-            <img className="section__title-img" src={item.brandImage} alt="" />
+            {item.brandImage && (
+              <img
+                className="section__title-img"
+                src={item.brandImage}
+                alt="Логотип бренда"
+              />
+            )}
+
             <h2 className="section__title-text section__title-text_place_description">
               {item.descriptionHeader}
             </h2>

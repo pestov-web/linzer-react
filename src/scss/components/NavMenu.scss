@@ -3,7 +3,7 @@
     display: none;
     flex-direction: row;
     gap: 28px;
-    height: 55%;
+    height: 60%;
     @include lg {
       display: flex;
     }
@@ -69,7 +69,7 @@
   &-link {
     text-decoration: none;
     color: $normal-text;
-    padding: 15px;
+    padding: 0 15px;
     font-family: $font-family;
   }
 }

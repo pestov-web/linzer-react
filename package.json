@@ -1,7 +1,7 @@
 {
   "name": "linzer-react",
   "version": "0.1.0",
-  "homepage": "https://pestov-web.github.io/",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.5.0",

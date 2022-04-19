@@ -24,17 +24,26 @@ function Footer() {
         <div className="footer__social">
           <ul className="footer__social-list">
             <li className="footer__social-item">
-              <a className="footer__social-link" href="#">
+              <a
+                className="footer__social-link"
+                href="https://twitter.com/?lang=ru"
+              >
                 <FaTwitter />
               </a>
             </li>
             <li className="footer__social-item">
-              <a className="footer__social-link" href="#">
+              <a
+                className="footer__social-link"
+                href="https://ru-ru.facebook.com/"
+              >
                 <FaFacebookF />
               </a>
             </li>
             <li className="footer__social-item">
-              <a className="footer__social-link" href="#">
+              <a
+                className="footer__social-link"
+                href="https://www.instagram.com/"
+              >
                 <FaInstagram />
               </a>
             </li>
