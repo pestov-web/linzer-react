@@ -1,0 +1,29 @@
+.scroll-top__button {
+  display: none;
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  border-radius: 3px;
+  right: 25px;
+  bottom: 25px;
+  background: $color-primary;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  transition: display 0.5s ease-in-out;
+  opacity: 0.6;
+  &-ico {
+    color: $color-white;
+    font-size: 24px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+  &:hover {
+    background: #2ae149;
+    transition: 0.3s ease-in-out;
+  }
+  &_visible {
+    display: block;
+  }
+}

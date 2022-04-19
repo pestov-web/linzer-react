@@ -10,7 +10,7 @@ function Partners({ sectionName }) {
       <ul className="partners__list">
         {PARTNERS.map((item, index) => (
           <li key={index} className="partners__item">
-            <a href={item.link} target="_blank">
+            <a href={item.link} target="_blank" rel="noreferrer">
               <img
                 className="partners__item-image"
                 src={item.image}

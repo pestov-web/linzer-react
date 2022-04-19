@@ -45,7 +45,7 @@ function About({ sectionName }) {
             <FaCheck className="about__list-ico" /> Теплосбережения
           </li>
         </ul>
-      </div>{" "}
+      </div>
     </section>
   );
 }

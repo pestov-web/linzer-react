@@ -1,0 +1,15 @@
+.scroll-to__button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  color: $normal-text;
+  transition: 0.3s;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: $font-family;
+  cursor: pointer;
+  padding: 0;
+  &:hover {
+    color: $color-primary;
+  }
+}

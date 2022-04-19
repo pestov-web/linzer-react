@@ -11,36 +11,36 @@ export const dropDownMenuItems = [
 ];
 
 export const menuItems = [
-  { nameEn: "Home", nameRu: "Главная", link: "/", anchor: "#home" },
+  { nameEn: "Home", nameRu: "Главная", link: "/", anchor: "home" },
   {
     nameEn: "About Us",
     nameRu: "О компании",
     link: "/about",
-    anchor: "#about",
+    anchor: "about",
   },
   {
     nameEn: "Products",
     nameRu: "Продукция",
     link: "/products",
-    anchor: "#products",
+    anchor: "products",
     dropDown: dropDownMenuItems,
   },
   {
     nameEn: "Portfolio",
     nameRu: "Портфолио",
     link: "/portfolio",
-    anchor: "#portfolio",
+    anchor: "portfolio",
   },
   {
     nameEn: "Partners",
     nameRu: "Партнеры",
     link: "/partners",
-    anchor: "#partners",
+    anchor: "partners",
   },
   {
     nameEn: "Contacts",
     nameRu: "Контакты",
     link: "/contacts",
-    anchor: "#contacts",
+    anchor: "contacts",
   },
 ];

@@ -14,6 +14,7 @@ function Header({
   toggleDropDown,
   toggleAccordion,
   closeModal,
+  currenPath,
 }) {
   return (
     <header className="header">
@@ -24,6 +25,7 @@ function Header({
             menuItems={menuItems}
             dropDownIsOpen={dropDownIsOpen}
             toggleDropDown={toggleDropDown}
+            currenPath={currenPath}
           />
           <Social />
         </div>

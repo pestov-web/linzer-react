@@ -1,9 +1,11 @@
 import React from "react";
 import { GoPrimitiveDot } from "react-icons/go";
+import Spacer from "./Spacer";
 
 function ProductDescription({ product }) {
   return (
     <>
+      <Spacer />
       {product.map((item, index) => (
         <section
           key={index}
@@ -21,14 +23,16 @@ function ProductDescription({ product }) {
           </div>
 
           <div className="product__container">
-            <div className="product__paragraph">
-              {" "}
-              {item.description.map((item, index) => (
-                <p key={index} className="product__paragraph-text">
-                  {item}
-                </p>
-              ))}
-            </div>
+            {item.description && (
+              <div className="product__paragraph">
+                {" "}
+                {item.description.map((item, index) => (
+                  <p key={index} className="product__paragraph-text">
+                    {item}
+                  </p>
+                ))}
+              </div>
+            )}
 
             <div className="product__description">
               <div className="product__description-container">

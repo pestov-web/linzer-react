@@ -10,6 +10,11 @@ function Map() {
         frameBorder="0"
         allowFullScreen
       />
+      {/*<iframe*/}
+      {/*  className="map__frame"*/}
+      {/*  src="https://yandex.ru/map-widget/v1/-/CCUFYIq5DD"*/}
+      {/*  frameBorder="1"*/}
+      {/*/>*/}
     </div>
   );
 }

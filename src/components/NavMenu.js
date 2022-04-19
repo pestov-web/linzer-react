@@ -1,34 +1,38 @@
 import React from "react";
 
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
+import ScrollToButton from "./ScrollToButton";
 import DropDownMenu from "./DropDownMenu/DropDownMenu";
 
-function NavMenu({ menuItems, toggleDropDown, dropDownIsOpen }) {
+import { HashLink } from "react-router-hash-link";
+
+function NavMenu({ menuItems, toggleDropDown, dropDownIsOpen, currenPath }) {
   return (
     <nav className="nav">
       <ul className="nav__list">
         {menuItems.map((item, index) =>
           !item.dropDown ? (
             <li key={index} className="nav__item">
-              <AnchorLink className="nav__link" href={item.anchor}>
-                {item.nameRu}
-              </AnchorLink>
+              {currenPath === "/" ? (
+                <ScrollToButton toId={item.anchor}>
+                  {item.nameRu}
+                </ScrollToButton>
+              ) : (
+                <HashLink className="nav__link" to={`/#${item.anchor}`}>
+                  {item.nameRu}
+                </HashLink>
+              )}
             </li>
           ) : (
             <li key={index} className="nav__item">
-              <AnchorLink
-                className="nav__link"
-                href={item.anchor}
-                onClick={toggleDropDown}
-              >
+              <ScrollToButton toId={item.anchor}>
                 {item.nameRu}
                 {!dropDownIsOpen ? (
                   <HiChevronDown className="nav__link-ico" />
                 ) : (
                   <HiChevronUp className="nav__link-ico" />
                 )}
-              </AnchorLink>
+              </ScrollToButton>
               <DropDownMenu
                 dropDownMenu={item.dropDown}
                 toggleDropDown={toggleDropDown}

@@ -12,11 +12,13 @@
 
 // layout
 @import "layout/section";
+@import "layout/spacer";
 
 //components
 @import "components/Header";
 @import "components/Logo";
 @import "components/NavMenu";
+@import "components/ScrollToButton";
 @import "components/Social";
 @import "components/BurgerButton";
 @import "components/Modal";
@@ -30,5 +32,4 @@
 @import "components/ContactUs";
 @import "components/ProductDescription";
 @import "components/Footer";
-
-//pages
+@import "components/ScrollTopButton";
