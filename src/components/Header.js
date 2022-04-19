@@ -41,6 +41,7 @@ function Header({
         toggleAccordion={toggleAccordion}
         closeModal={closeModal}
         menuItems={menuItems}
+        currenPath={currenPath}
       />
     </header>
   );
