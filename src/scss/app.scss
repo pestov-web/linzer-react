@@ -2,17 +2,33 @@
 @import "abstracts/variables";
 @import "abstracts/functions";
 @import "abstracts/mixins";
-//vendors
-// Import Swiper styles
 
+//vendors
 @import "venobox/dist/venobox.min.css";
+
 // base
 @import "base/reset";
 @import "base/typography";
+
 // layout
 @import "layout/section";
+
 //components
 @import "components/Header";
+@import "components/Logo";
+@import "components/NavMenu";
+@import "components/Social";
+@import "components/BurgerButton";
+@import "components/Modal";
 @import "components/About";
+@import "components/Why";
+@import "components/Products";
+@import "components/Portfolio";
+@import "components/Partners";
+@import "components/Map";
+@import "components/Contacts";
+@import "components/ContactUs";
+@import "components/ProductDescription";
 @import "components/Footer";
+
 //pages

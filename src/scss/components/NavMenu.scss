@@ -1,0 +1,29 @@
+.nav {
+  &__list {
+    display: none;
+    flex-direction: row;
+    gap: 28px;
+    @include lg {
+      display: flex;
+    }
+  }
+  &__item {
+    list-style: none;
+    position: relative;
+  }
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $normal-text;
+    transition: 0.3s;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: $font-family;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+  &__link-active {
+    color: $color-primary;
+  }
+}

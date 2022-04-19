@@ -1,0 +1,74 @@
+.contacts {
+  padding: 60px 0;
+  &__container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px 0;
+    max-width: 90%;
+    @include sm {
+      max-width: 510px;
+    }
+    @include md {
+      max-width: 690px;
+    }
+    @include lg {
+      max-width: 770px;
+    }
+    @include xl {
+      max-width: 920px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 30px;
+    width: 100%;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    padding: 30px;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      width: calc(100% / 12 * 12 - 10px);
+      @include sm {
+        width: calc(100% / 12 * 12);
+      }
+      @include md {
+        width: calc(100% / 12 * 4 - 20px);
+      }
+
+      &-contacts {
+        margin: 0 0 5px 57px;
+      }
+    }
+    &-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &-ico {
+      font-size: 20px;
+      color: $color-primary;
+      float: left;
+      width: 44px;
+      height: 44px;
+      border: 1px solid $color-primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      transition: all ease-in-out 0.4s;
+      &:hover {
+        background: $color-primary;
+        color: $color-white;
+      }
+    }
+    &-title {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
