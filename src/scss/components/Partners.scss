@@ -1,13 +1,15 @@
 .partners {
+  padding: 0 5px;
   &__list {
     max-width: 510px;
     margin: 0 auto;
-    padding: 0 5px;
+    padding: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     border-top: 1px solid $partners-border;
     border-left: 1px solid $partners-border;
+
     @include sm {
       max-width: 510px;
     }
