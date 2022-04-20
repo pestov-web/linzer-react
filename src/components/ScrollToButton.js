@@ -7,7 +7,7 @@ const ScrollToButton = ({
   duration,
   children,
   onClick,
-  styleClass,
+  isModal,
 }) => {
   const handleClick = () => {
     scrollTo({ id: toId, ref: toRef, duration });
@@ -19,7 +19,7 @@ const ScrollToButton = ({
   return (
     <button
       className={
-        styleClass ? `scroll-to__button ${styleClass}` : "scroll-to__button"
+        isModal ? "scroll-to__button_place_modal" : "scroll-to__button"
       }
       onClick={handleClick}
     >

@@ -35,13 +35,13 @@ function ModalMenu({
                     <ScrollToButton
                       toId={item.anchor}
                       onClick={closeModal}
-                      styleClass={"nav__link"}
+                      isModal={true}
                     >
                       {item.nameRu}
                     </ScrollToButton>
                   ) : (
                     <HashLink
-                      className="nav__link"
+                      className="modal-menu__nav-link"
                       to={`/#${item.anchor}`}
                       onClick={closeModal}
                     >
@@ -55,11 +55,11 @@ function ModalMenu({
                     <>
                       {" "}
                       <ScrollToButton
-                        styleClass={"nav__link"}
                         toId={item.anchor}
                         onClick={toggleAccordion}
+                        isModal={true}
                       >
-                        {item.nameRu}{" "}
+                        {item.nameRu}
                         {!accordionIsOpen ? (
                           <HiChevronDown className="modal-menu__nav-link-ico" />
                         ) : (
@@ -76,7 +76,7 @@ function ModalMenu({
                     <>
                       {" "}
                       <HashLink
-                        className="nav__link"
+                        className="modal-menu__nav-link"
                         to={`/#${item.anchor}`}
                         onClick={toggleAccordion}
                       >
