@@ -1,7 +1,7 @@
 // slider images
-import SLIDE_1 from "../images/slide/slide-1.jpg";
-import SLIDE_2 from "../images/slide/slide-2.jpg";
-import SLIDE_3 from "../images/slide/slide-3.jpg";
+import SLIDE_1 from "../images/slide/slide-1.webp";
+import SLIDE_2 from "../images/slide/slide-2.webp";
+import SLIDE_3 from "../images/slide/slide-3.webp";
 
 // partners images
 import PARTNER_1 from "../images/partners/client-1.png";
@@ -18,7 +18,7 @@ import PARTNER_11 from "../images/partners/client-11.png";
 import PARTNER_12 from "../images/partners/client-12.png";
 
 // stuff
-import VIDEO from "../images/video.jpg";
+import VIDEO from "../images/video.webp";
 export const VIDEO_IMG = VIDEO;
 
 // hero carousel
