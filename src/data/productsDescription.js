@@ -1,100 +1,100 @@
 // brands
-import shuco from "../images/production/description/brands/schuco.png";
-import alutech from "../images/production/description/brands/alutech.png";
-import sial from "../images/production/description/brands/sial.png";
+import shuco from "../images/production/description/brands/schuco.webp";
+import alutech from "../images/production/description/brands/alutech.webp";
+import sial from "../images/production/description/brands/sial.webp";
 // windows
-import aws70 from "../images/production/description/windows/aws_70_hi.png";
+import aws70 from "../images/production/description/windows/aws_70_hi.webp";
 
-import aws70hi from "../images/production/description/windows/PASK_AWS70.png";
-import aws70_1 from "../images/production/description/windows/aws70_1.jpg";
-import aws70_2 from "../images/production/description/windows/aws70_2.jpg";
-import aws70_3 from "../images/production/description/windows/aws70_3.jpg";
+import aws70hi from "../images/production/description/windows/PASK_AWS70.webp";
+import aws70_1 from "../images/production/description/windows/aws70_1.webp";
+import aws70_2 from "../images/production/description/windows/aws70_2.webp";
+import aws70_3 from "../images/production/description/windows/aws70_3.webp";
 
-import kpt74 from "../images/production/description/windows/kpt74.png";
-import kpt74_1 from "../images/production/description/windows/kpt74_1.jpg";
-import kpt74_2 from "../images/production/description/windows/kpt74_2.jpg";
-import kpt74_3 from "../images/production/description/windows/kpt74_3.jpg";
+import kpt74 from "../images/production/description/windows/kpt74.webp";
+import kpt74_1 from "../images/production/description/windows/kpt74_1.webp";
+import kpt74_2 from "../images/production/description/windows/kpt74_2.webp";
+import kpt74_3 from "../images/production/description/windows/kpt74_3.webp";
 
-import w72 from "../images/production/description/windows/W72.png";
+import w72 from "../images/production/description/windows/W72.webp";
 // doors
-import ads70 from "../images/production/description/doors/ADS_70_HD.png";
-import ads70_1 from "../images/production/description/doors/ads70_1.jpeg";
-import ads70_2 from "../images/production/description/doors/ads70_2.jpeg";
-import ads70_3 from "../images/production/description/doors/ads70_3.jpeg";
-import kpt74d_1 from "../images/production/description/doors/kpt74_1.jpg";
-import kpt74d_2 from "../images/production/description/doors/kpt74_2.jpg";
-import kpt74d_3 from "../images/production/description/doors/kpt74_3.jpg";
+import ads70 from "../images/production/description/doors/ADS_70_HD.webp";
+import ads70_1 from "../images/production/description/doors/ads70_1.webp";
+import ads70_2 from "../images/production/description/doors/ads70_2.webp";
+import ads70_3 from "../images/production/description/doors/ads70_3.webp";
+import kpt74d_1 from "../images/production/description/doors/kpt74_1.webp";
+import kpt74d_2 from "../images/production/description/doors/kpt74_2.webp";
+import kpt74d_3 from "../images/production/description/doors/kpt74_3.webp";
 // winter garden
 import wg from "../images/production/description/winterg/wg.webp";
-import wg1 from "../images/production/description/winterg/wg1.jpeg";
-import wg2 from "../images/production/description/winterg/wg2.jpg";
-import wg3 from "../images/production/description/winterg/wg3.jpg";
+import wg1 from "../images/production/description/winterg/wg1.webp";
+import wg2 from "../images/production/description/winterg/wg2.webp";
+import wg3 from "../images/production/description/winterg/wg3.webp";
 // ventilated
-import vent from "../images/production/description/ventilated/vent.png";
-import vent_1 from "../images/production/description/ventilated/vent_1.jpg";
-import vent_2 from "../images/production/description/ventilated/vent_2.jpg";
-import vent_3 from "../images/production/description/ventilated/vent_3.jpg";
+import vent from "../images/production/description/ventilated/vent.webp";
+import vent_1 from "../images/production/description/ventilated/vent_1.webp";
+import vent_2 from "../images/production/description/ventilated/vent_2.webp";
+import vent_3 from "../images/production/description/ventilated/vent_3.webp";
 // lantern
-import lant from "../images/production/description/lantern/lantern.jpg";
-import lant_1 from "../images/production/description/lantern/lantern_1.jpg";
-import lant_2 from "../images/production/description/lantern/lantern_2.jpg";
-import lant_3 from "../images/production/description/lantern/lantern_3.jpeg";
+import lant from "../images/production/description/lantern/lantern.webp";
+import lant_1 from "../images/production/description/lantern/lantern_1.webp";
+import lant_2 from "../images/production/description/lantern/lantern_2.webp";
+import lant_3 from "../images/production/description/lantern/lantern_3.webp";
 // sliding
-import ass80 from "../images/production/description/sliding/ass80.png";
-import ass80_1 from "../images/production/description/sliding/ass80_1.jpeg";
-import ass80_2 from "../images/production/description/sliding/ass80_2.jpg";
-import ass80_3 from "../images/production/description/sliding/ass80_3.jpeg";
+import ass80 from "../images/production/description/sliding/ass80.webp";
+import ass80_1 from "../images/production/description/sliding/ass80_1.webp";
+import ass80_2 from "../images/production/description/sliding/ass80_2.webp";
+import ass80_3 from "../images/production/description/sliding/ass80_3.webp";
 
 import ass70 from "../images/production/description/sliding/ass70w.webp";
-import ass70_1 from "../images/production/description/sliding/ass70_1.jpg";
-import ass70_2 from "../images/production/description/sliding/ass70_2.jpg";
-import ass70_3 from "../images/production/description/sliding/ass70_3.jpg";
+import ass70_1 from "../images/production/description/sliding/ass70_1.webp";
+import ass70_2 from "../images/production/description/sliding/ass70_2.webp";
+import ass70_3 from "../images/production/description/sliding/ass70_3.webp";
 
-import ass70hi from "../images/production/description/sliding/ASS_70HI.png";
-import ass70hi_1 from "../images/production/description/sliding/ass70hi_1.jpg";
-import ass70hi_2 from "../images/production/description/sliding/ass70hi_2.jpg";
-import ass70hi_3 from "../images/production/description/sliding/ass70hi_3.jpeg";
+import ass70hi from "../images/production/description/sliding/ASS_70HI.webp";
+import ass70hi_1 from "../images/production/description/sliding/ass70hi_1.webp";
+import ass70hi_2 from "../images/production/description/sliding/ass70hi_2.webp";
+import ass70hi_3 from "../images/production/description/sliding/ass70hi_3.webp";
 
-import ass32 from "../images/production/description/sliding/ass32.png";
-import ass32_1 from "../images/production/description/sliding/ass32_1.jpeg";
-import ass32_2 from "../images/production/description/sliding/ass32_2.jpeg";
-import ass32_3 from "../images/production/description/sliding/ass32_3.png";
+import ass32 from "../images/production/description/sliding/ass32.webp";
+import ass32_1 from "../images/production/description/sliding/ass32_1.webp";
+import ass32_2 from "../images/production/description/sliding/ass32_2.webp";
+import ass32_3 from "../images/production/description/sliding/ass32_3.webp";
 // canopies
-import can from "../images/production/description/canopies/canopies.png";
-import can_1 from "../images/production/description/canopies/canopies1.jpg";
-import can_2 from "../images/production/description/canopies/canopies2.jpg";
-import can_3 from "../images/production/description/canopies/canopies3.jpeg";
+import can from "../images/production/description/canopies/canopies.webp";
+import can_1 from "../images/production/description/canopies/canopies1.webp";
+import can_2 from "../images/production/description/canopies/canopies2.webp";
+import can_3 from "../images/production/description/canopies/canopies3.webp";
 // pvc
-import ct70 from "../images/production/description/pvc/corona.png";
-import ct70_1 from "../images/production/description/pvc/corona_1.jpg";
-import ct70_2 from "../images/production/description/pvc/corona_2.jpg";
-import ct70_3 from "../images/production/description/pvc/corona_3.jpeg";
+import ct70 from "../images/production/description/pvc/corona.webp";
+import ct70_1 from "../images/production/description/pvc/corona_1.webp";
+import ct70_2 from "../images/production/description/pvc/corona_2.webp";
+import ct70_3 from "../images/production/description/pvc/corona_3.webp";
 
 import ct70hs from "../images/production/description/pvc/ct70hs.webp";
-import ct70hs_1 from "../images/production/description/pvc/ct70hs_1.jpeg";
-import ct70hs_2 from "../images/production/description/pvc/ct70hs_2.jpeg";
-import ct70hs_3 from "../images/production/description/pvc/ct70hs_3.jpeg";
+import ct70hs_1 from "../images/production/description/pvc/ct70hs_1.webp";
+import ct70hs_2 from "../images/production/description/pvc/ct70hs_2.webp";
+import ct70hs_3 from "../images/production/description/pvc/ct70hs_3.webp";
 
 import ct82hs from "../images/production/description/pvc/ct82hs.webp";
-import ct82hs_1 from "../images/production/description/pvc/ct82hs_1.jpg";
-import ct82hs_2 from "../images/production/description/pvc/ct82hs_2.jpg";
-import ct82hs_3 from "../images/production/description/pvc/ct82hs_3.jpeg";
+import ct82hs_1 from "../images/production/description/pvc/ct82hs_1.webp";
+import ct82hs_2 from "../images/production/description/pvc/ct82hs_2.webp";
+import ct82hs_3 from "../images/production/description/pvc/ct82hs_3.webp";
 // facade
-import fac1 from "../images/production/description/facade/fac1.png";
-import fac2 from "../images/production/description/facade/fac2.png";
-import fac3 from "../images/production/description/facade/fac3.jpeg";
+import fac1 from "../images/production/description/facade/fac1.webp";
+import fac2 from "../images/production/description/facade/fac2.webp";
+import fac3 from "../images/production/description/facade/fac3.webp";
 import fw50hi from "../images/production/description/facade/fw50hi.webp";
-import fw50hi_1 from "../images/production/description/facade/fw50hi_1.jpeg";
-import fw50hi_2 from "../images/production/description/facade/fw50hi_2.jpg";
-import fw50hi_3 from "../images/production/description/facade/fw50hi_3.jpeg";
-import kp50k from "../images/production/description/facade/kp50k.jpeg";
-import kp50k_1 from "../images/production/description/facade/kp50k_1.jpeg";
-import kp50k_2 from "../images/production/description/facade/kp50k_2.jpeg";
-import kp50k_3 from "../images/production/description/facade/kp50k_3.jpeg";
+import fw50hi_1 from "../images/production/description/facade/fw50hi_1.webp";
+import fw50hi_2 from "../images/production/description/facade/fw50hi_2.webp";
+import fw50hi_3 from "../images/production/description/facade/fw50hi_3.webp";
+import kp50k from "../images/production/description/facade/kp50k.webp";
+import kp50k_1 from "../images/production/description/facade/kp50k_1.webp";
+import kp50k_2 from "../images/production/description/facade/kp50k_2.webp";
+import kp50k_3 from "../images/production/description/facade/kp50k_3.webp";
 import alt50 from "../images/production/description/facade/alt50.webp";
-import alt50_1 from "../images/production/description/facade/alt50_1.jpeg";
-import alt50_2 from "../images/production/description/facade/alt50_2.jpeg";
-import alt50_3 from "../images/production/description/facade/alt50_3.jpeg";
+import alt50_1 from "../images/production/description/facade/alt50_1.webp";
+import alt50_2 from "../images/production/description/facade/alt50_2.webp";
+import alt50_3 from "../images/production/description/facade/alt50_3.webp";
 
 export const windows = [
   {
