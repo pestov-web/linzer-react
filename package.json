@@ -27,7 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npm run build && scp -r ./build/* mwk@192.168.10.147:/var/www/html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
