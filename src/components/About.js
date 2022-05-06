@@ -13,6 +13,7 @@ function About({ sectionName }) {
           <img src={VIDEO_IMG} className="about__video-img" alt="Промо ролик" />
 
           <a
+            aria-label="рекламный ролик"
             href="https://www.youtube.com/watch?v=2c9wJSuCwow"
             className="about__video-button venobox"
             data-vbtype="video"
@@ -21,8 +22,8 @@ function About({ sectionName }) {
           />
         </div>
         <ul className="about__list">
-          <h3 className="about__list-title">Сделайте правильный выбор</h3>
           <li className="about__list-item">
+            <h3 className="about__list-title">Сделайте правильный выбор</h3>
             <FaCheck className="about__list-ico" /> При правильном
             проектировании из окон будет открываться сногсшибательный вид на
             ночной город, лесную лужайку или кроны деревьев.
@@ -37,8 +38,9 @@ function About({ sectionName }) {
             расширяют пространство, создают ощущение свободы и единения с
             природой и окружающим вас миром.
           </li>
-          <h3 className="about__list-title">Решим Вопросы</h3>
+
           <li className="about__list-item">
+            <h3 className="about__list-title">Решим Вопросы</h3>
             <FaCheck className="about__list-ico" /> Малоосвещенности
           </li>
           <li className="about__list-item">

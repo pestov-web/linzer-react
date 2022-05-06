@@ -1,24 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function Social() {
   return (
     <ul className="social">
       <li className="social__item">
-        <Link className="social__link" to="/#">
+        <a className="social__link" href="https://twitter.com/" aria-label='Twitter'  target='_blank' rel="noreferrer">
           <FaTwitter />
-        </Link>
+        </a>
       </li>
       <li className="social__item">
-        <Link className="social__link" to="/#">
+        <a className="social__link" href="https://www.facebook.com/"  aria-label='FaceBook'  target='_blank' rel="noreferrer">
           <FaFacebookF />
-        </Link>
+        </a>
       </li>
-      <li className="social__item">
-        <Link className="social__link" to="/#">
+      <li className="social__item" >
+        <a className="social__link" href="https://www.instagram.com/" aria-label='Instagram' target='_blank' rel="noreferrer">
           <FaInstagram />
-        </Link>
+        </a>
       </li>
     </ul>
   );

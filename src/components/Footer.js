@@ -25,6 +25,7 @@ function Footer() {
           <ul className="footer__social-list">
             <li className="footer__social-item">
               <a
+                aria-label="twitter"
                 className="footer__social-link"
                 target="_blank"
                 href="https://twitter.com/?lang=ru"
@@ -35,6 +36,7 @@ function Footer() {
             </li>
             <li className="footer__social-item">
               <a
+                aria-label="facebook"
                 className="footer__social-link"
                 target="_blank"
                 href="https://ru-ru.facebook.com/"
@@ -45,6 +47,7 @@ function Footer() {
             </li>
             <li className="footer__social-item">
               <a
+                aria-label="instagram"
                 className="footer__social-link"
                 target="_blank"
                 href="https://www.instagram.com/"

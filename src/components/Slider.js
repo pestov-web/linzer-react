@@ -30,7 +30,7 @@ function Slider() {
         <SwiperSlide key={index}>
           <img src={item.image} alt={item.nameRu} />
           <div className="swiper__legend">
-            <h3 className="swiper__title">{item.nameRu}</h3>
+            <h2 className="swiper__title">{item.nameRu}</h2>
             <p className="swiper__subtitle">{item.legend}</p>
           </div>
         </SwiperSlide>
