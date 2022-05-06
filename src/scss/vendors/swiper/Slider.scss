@@ -1,3 +1,9 @@
+@mixin sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -39,11 +45,15 @@
     background: rgba(4, 4, 4, 0.7);
     position: absolute;
     border-top: #1bbd36 solid 5px;
-    width: 55%;
-    bottom: 80px;
+    width: 90%;
+    bottom: 55px;
     box-sizing: border-box;
     text-align: left;
     color: white;
+    @include sm {
+      width: 55%;
+      bottom: 80px;
+    }
   }
   &__title {
     margin: 0 0 20px;
