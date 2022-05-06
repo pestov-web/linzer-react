@@ -1,10 +1,10 @@
 # Сайт строительной компании "Linzer"
 ![Linzer screenshot](screenshot.webp)
 
-### Описание
+## Описание
 Многостраничный сайт компании "Linzer" переделаный в адаптивный с использованием React из старого статичного [сайта](https://linzer.su/old/).
 #### Демонстрация приложения: [https://linzer.su/](https://linzer.su/)
-### Стек приложения
+## Стек приложения
 ![JavaScript](https://img.shields.io/badge/-JavaScript-141130?style=flat-square&logo=JavaScript)
 ![React](https://img.shields.io/badge/-React-141130?style=flat-square&logo=React)
 ![React Router](https://img.shields.io/badge/-React&nbsp;Router-141130?style=flat-square&logo=ReactRouter)
