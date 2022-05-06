@@ -41,24 +41,31 @@
   margin-right: auto;
   position: relative;
   &__legend {
-    padding: 20px 20px;
+    padding: 10px 10px;
     background: rgba(4, 4, 4, 0.7);
     position: absolute;
     border-top: #1bbd36 solid 5px;
     width: 90%;
-    bottom: 55px;
+    bottom: 35px;
     box-sizing: border-box;
     text-align: left;
     color: white;
     @include sm {
+      padding: 20px 20px;
       width: 55%;
       bottom: 80px;
     }
   }
   &__title {
-    margin: 0 0 20px;
-    font-size: 28px;
-    font-weight: 700;
+    margin: 0;
+    font-size: 26px;
+    font-weight: 500;
+
+    @include sm {
+      margin: 0 0 20px;
+      font-size: 28px;
+      font-weight: 700;
+    }
   }
   &__subtitle {
   }
