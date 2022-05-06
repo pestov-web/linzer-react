@@ -10,7 +10,7 @@ const ScrollToButton = ({ toId, toRef, duration, children, onClick, isModal }) =
     };
 
     return (
-        <button className={isModal ? 'scroll-to__button_place_modal' : 'scroll-to__button'} onClick={handleClick}>
+        <button className={isModal ? 'scroll-to__button_place_modal' : 'scroll-to__button'} onClick={handleMenuClick}>
             {children}
         </button>
     );

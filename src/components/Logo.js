@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Logo(props) {
+function Logo() {
   return (
     <div className="logo">
       <h1>

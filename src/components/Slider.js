@@ -12,7 +12,7 @@ import { SLIDES } from "../data/images";
 
 import("../scss/vendors/swiper/Slider.scss");
 
-function Slider(props) {
+function Slider() {
   return (
     <Swiper
       slidesPerView={1}
