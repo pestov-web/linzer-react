@@ -59,8 +59,9 @@
       width: 230px;
       align-self: center;
       transition: all ease-in 0.3s;
+      cursor: pointer;
       &:hover {
-        transform: scale(1.03, 1.03);
+        transform: scale(1.02, 1.02);
         box-shadow: 1px 1px 1px 1px rgba(9, 9, 9, 0.33);
       }
     }
