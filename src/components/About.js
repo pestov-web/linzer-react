@@ -1,8 +1,14 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
 import { VIDEO_IMG } from "../data/images";
+import VenoBox from "venobox";
 
 function About({ sectionName }) {
+  React.useEffect(() => {
+    new VenoBox({
+      selector: ".venobox",
+    });
+  }, []);
   return (
     <section id="about" className="section about">
       <div className="section__title">

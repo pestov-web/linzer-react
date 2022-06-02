@@ -1,5 +1,4 @@
 import React from "react";
-import VenoBox from "venobox";
 
 import Header from "./Header";
 import Slider from "./Slider";
@@ -55,11 +54,6 @@ function App() {
   };
 
   //  Venobox2 (youtube modal)
-  React.useEffect(() => {
-    new VenoBox({
-      selector: ".venobox",
-    });
-  }, []);
 
   return (
     <div className="App">
