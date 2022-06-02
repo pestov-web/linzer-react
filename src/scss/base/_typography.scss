@@ -3,3 +3,19 @@
 @import "@fontsource/roboto/cyrillic-700.css";
 
 $font-family: "Roboto", sans-serif;
+
+body {
+  font-family: $font-family;
+  color: #4d4643;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family;
+}
